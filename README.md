@@ -23,7 +23,6 @@ Para correr el programa es necesario tener instalado [Docker compose](https://do
 Utilizar los siguientes comandos en cmd para instalar Node.js
 ```
 docker pull node:22-alpine
-
 ```
 Luego es necesario levantar los contenedores dockers
 ```
