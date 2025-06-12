@@ -18,7 +18,7 @@ El programa esta siendo probado y ejecutado en el simbolo del sistema correspond
 - Para la base de datos se usó PostgreSQL
 ---
 ## Uso
-Para correr el programa es necesario tener instalado [Docker compose](https://docs.docker.com/compose/install/), [PostreSQL](https://www.postgresql.org/download/), React y
+Para correr el programa es necesario tener instalado [Docker compose](https://docs.docker.com/compose/install/), [PostreSQL](https://www.postgresql.org/download/) y React
 
 Utilizar los siguientes comandos en cmd para instalar Node.js
 ```
