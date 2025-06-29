@@ -1,36 +1,41 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useAuth } from '../context/auth'; // Asegúrate de que la ruta sea correcta
+import Header from './Header';
+import { useAuth } from '../context/auth';
 
-export default function HomePage() {
+const HomePage = () => {
   const navigate = useNavigate();
-  const { user, logout } = useAuth(); // Se extrae la función logout del contexto
+  const { user, logout } = useAuth();
+
+  const handleBackToHome = () => navigate('/');
 
   const handleLogout = () => {
-    logout();          // Limpia los datos del usuario
-    navigate('/login'); // Redirige a la página de login
+    logout();
+    navigate('/login');
   };
 
   return (
-    <div style={{ textAlign: 'center', marginTop: '5vh' }}>
-      {user && (
-        <div
-          style={{
-            position: 'absolute',
-            top: 20,
-            right: 30,
-            textAlign: 'right',
-          }}
-        >
-          <div style={{ fontWeight: 'bold', fontSize: '1.5rem', marginBottom: '5px' }}>
-            Bienvenido, {user.name}
-          </div>
-          <button onClick={handleLogout}>Cerrar sesión</button>
+    <div className="min-h-screen bg-gray-100 text-gray-900 flex flex-col">
+      <Header
+        onBackHome={handleBackToHome}
+        userName={user?.name}
+        onLogout={handleLogout}
+      />
+      <main className="flex-grow flex flex-col items-center justify-center px-6 py-20">
+        <div className="text-center">
+          <h1 className="text-4xl sm:text-5xl font-bold mb-8">
+            Bienvenido a la Plataforma de Ensayos PAES
+          </h1>
+          <button
+            onClick={() => navigate('/seleccionar')}
+            className="bg-indigo-500 hover:bg-indigo-600 text-white px-10 py-4 rounded-full text-lg font-medium transition shadow-lg"
+          >
+            Realizar ensayo
+          </button>
         </div>
-      )}
-      <h1>Sistema de Ensayos PAES</h1>
-      <p>Prepárate para la PAES con ensayos prácticos</p>
-      <button onClick={() => navigate('/estudiante')}>Realizar Ensayo</button>
+      </main>
     </div>
   );
-}
+};
+
+export default HomePage;

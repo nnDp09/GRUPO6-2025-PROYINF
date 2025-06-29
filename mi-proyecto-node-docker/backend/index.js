@@ -95,8 +95,8 @@ app.use(cors({
     res.send('¡Bienvenido! Usa /save para guardar un mensaje y /messages para verlos.');
   });
   
-  const port2 = 4000;
 
-  app.listen(port2, () => {
-  console.log(`App corriendo en http://localhost:${port2}`);
+
+  app.listen(port, () => {
+  console.log(`App corriendo en http://localhost:${port}`);
 });
