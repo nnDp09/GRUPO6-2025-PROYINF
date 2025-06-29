@@ -20,15 +20,9 @@ El programa esta siendo probado y ejecutado en el simbolo del sistema correspond
 ## Uso
 Para correr el programa es necesario tener instalado [Docker compose](https://docs.docker.com/compose/install/), [PostgreSQL](https://www.postgresql.org/download/), React y [Node.js](https://nodejs.org/es/)
 
-Luego es necesario levantar los contenedores dockers
+Luego es necesario levantar el proyecto mediante los contenedores dockers
 ```
 docker-compose up --build
-```
-Para levantar el proyecto se debe acceder a la carpeta frontend
-```
-cd frontend
-npm install
-npm run dev
 ```
 
 y buscar en el navegador el siguiente [enlace](http://localhost:5174/)
