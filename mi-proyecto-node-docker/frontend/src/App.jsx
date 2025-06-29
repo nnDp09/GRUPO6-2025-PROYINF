@@ -10,6 +10,7 @@ import { AuthProvider } from "./context/auth";
 import { useParams } from 'react-router-dom';
 
 
+
 function App() {
   return (
     <AuthProvider>
