@@ -1,18 +1,19 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useAuth } from '../context/auth'; // Asegúrate de que la ruta sea correcta
+import { useAuth } from '../context/auth';
 
 export default function HomePage() {
   const navigate = useNavigate();
-  const { user, logout } = useAuth(); // Se extrae la función logout del contexto
+  const { user, logout } = useAuth();
 
   const handleLogout = () => {
-    logout();          // Limpia los datos del usuario
-    navigate('/login'); // Redirige a la página de login
+    logout();
+    navigate('/login');
   };
 
   return (
-    <div style={{ textAlign: 'center', marginTop: '5vh' }}>
+    <div style={{ height: '100vh', position: 'relative' }}>
+      {/* Sección fija para mostrar nombre y logout */}
       {user && (
         <div
           style={{
@@ -22,15 +23,35 @@ export default function HomePage() {
             textAlign: 'right',
           }}
         >
-          <div style={{ fontWeight: 'bold', fontSize: '1.5rem', marginBottom: '5px' }}>
+          <div style={{ fontWeight: 'bold', fontSize: '1.2rem' }}>
             Bienvenido, {user.name}
+          </div>
+          <div style={{ fontWeight: 'bold', fontSize: '1.2rem' }}>
+            <strong>{user.role}</strong>
           </div>
           <button onClick={handleLogout}>Cerrar sesión</button>
         </div>
       )}
-      <h1>Sistema de Ensayos PAES</h1>
-      <p>Prepárate para la PAES con ensayos prácticos</p>
-      <button onClick={() => navigate('/estudiante')}>Realizar Ensayo</button>
+
+      {/* Contenido centrado */}
+      <div
+        style={{
+          height: '100%',
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'center',
+          alignItems: 'center',
+          textAlign: 'center',
+        }}
+      >
+        <h1>Sistema de Ensayos PAES</h1>
+        <p>Prepárate para la PAES con ensayos prácticos</p>
+        {user?.role === 'profesor' ? (
+          <button onClick={() => navigate('/profesor')}>Crear Ensayo</button>
+        ) : (
+          <button onClick={() => navigate('/estudiante')}>Realizar Ensayo</button>
+        )}
+      </div>
     </div>
   );
 }
