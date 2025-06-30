@@ -20,7 +20,7 @@ El programa esta siendo probado y ejecutado en el simbolo del sistema correspond
 ## Uso
 Para correr el programa es necesario tener instalado [Docker compose](https://docs.docker.com/compose/install/), [PostgreSQL](https://www.postgresql.org/download/), React y [Node.js](https://nodejs.org/es/)
 
-En caso de tener intalado los programas mencionados, es necesario abrir la app de "Docker Desktop"
+En caso de tener instalados los programas mencionados, es necesario abrir la app de "Docker Desktop"
 
 Luego posicionar la terminar en la raiz del proyecto con
 ```
