@@ -28,8 +28,28 @@ export default function LoginPage() {
     const decoded = parseJwt(token);
 
     if (decoded && decoded.email && decoded.name) {
-      login({ name: decoded.name, email: decoded.email });
-      navigate('/');
+      const email = decoded.email;
+      const isSansano = email.endsWith('@sansano.usm.cl')
+      const isBenjamin = email === 'benjaminbarria06@gmail.com';
+
+      let role = 'invitado';
+
+      if (isBenjamin) {
+        role = 'profesor';
+      } else if (decoded.role) {
+        role = decoded.role; // opcional si estás inyectando el rol desde el backend o Google Workspace
+      } else if (isSansano) {
+        role = 'estudiante';
+      }
+
+      const isAllowed = isBenjamin || isSansano || role === 'profesor' || role === 'estudiante';
+      
+      if (isAllowed) {
+        login({ name: decoded.name, email, role  });
+        navigate('/');
+      } else{
+        alert('Solo se permiten correos @sansano.usm.cl o tu cuenta autorizada.');
+      }
     } else {
       alert('No se pudo procesar la respuesta de Google.');
     }
