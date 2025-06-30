@@ -25,4 +25,10 @@ Luego es necesario levantar el proyecto mediante los contenedores dockers
 docker-compose up --build
 ```
 
-y buscar en el navegador el siguiente [enlace](http://localhost:5174/)
+y buscar en el navegador el siguiente [enlace](http://localhost:5173/)
+
+cuentas
+Cuentas:  
+| Nombre | Contraseña | Rol |
+|----------|----------|----------|
+| prbprfsr@gmail.com   | B12345678!  | Profesor | 
