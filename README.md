@@ -20,7 +20,13 @@ El programa esta siendo probado y ejecutado en el simbolo del sistema correspond
 ## Uso
 Para correr el programa es necesario tener instalado [Docker compose](https://docs.docker.com/compose/install/), [PostgreSQL](https://www.postgresql.org/download/), React y [Node.js](https://nodejs.org/es/)
 
-Luego es necesario levantar el proyecto mediante los contenedores dockers
+En caso de tener intalado los programas mencionados, es necesario abrir la app de "Docker Desktop"
+
+Luego posicionar la terminar en la raiz del proyecto con
+```
+cd ruta/del/proyecto/mi-proyecto-node-docker
+```
+Finalmente ejecutar el siguiente comando 
 ```
 docker-compose up --build
 ```
