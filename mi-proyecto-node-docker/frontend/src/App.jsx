@@ -5,6 +5,7 @@ import { useAuth } from './context/auth';
 
 import HomePage from "./components/HomePage";
 import SubjectSelector from "./components/SubjectSelector";
+import QuestionBuilder from "./components/CreateQuess";
 import ExamPage from "./components/ExamPage";
 import LoginPage from "./pages/loginPage"; 
 import { useParams } from 'react-router-dom';
@@ -28,6 +29,7 @@ function App() {
       <Route path="/" element={user ? <HomePage /> : <Navigate to="/login" />} />
       <Route path="/estudiante" element={user ? <SubjectSelector /> : <Navigate to="/login" />} />
       <Route path="/exam/:subject" element={user ? <ExamPageWrapper /> : <Navigate to="/login" />} />
+      <Route path="/crear-pregunta" element={user ? <QuestionBuilder /> : <Navigate to="/login" />} />
     </Routes>
   );
 }

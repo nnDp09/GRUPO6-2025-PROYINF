@@ -30,19 +30,19 @@ export default function LoginPage() {
     if (decoded && decoded.email && decoded.name) {
       const email = decoded.email;
       const isSansano = email.endsWith('@sansano.usm.cl')
-      const isBenjamin = email === 'benjaminbarria06@gmail.com';
+      const isProfesor = email === 'benjaminbarria06@gmail.com' || 'prbprfsr@gmail.com' ;
 
       let role = 'invitado';
 
-      if (isBenjamin) {
-        role = 'profesor';
+      if (isSansano) {
+        role = 'estudiante';
       } else if (decoded.role) {
         role = decoded.role; // opcional si estás inyectando el rol desde el backend o Google Workspace
-      } else if (isSansano) {
-        role = 'estudiante';
+      } else if (isProfesor) {
+        role = 'profesor';
       }
 
-      const isAllowed = isBenjamin || isSansano || role === 'profesor' || role === 'estudiante';
+      const isAllowed = isProfesor || isSansano || role === 'profesor' || role === 'estudiante';
       
       if (isAllowed) {
         login({ name: decoded.name, email, role  });

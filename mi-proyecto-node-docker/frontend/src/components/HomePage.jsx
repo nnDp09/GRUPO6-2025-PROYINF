@@ -47,7 +47,10 @@ export default function HomePage() {
         <h1>Sistema de Ensayos PAES</h1>
         <p>Prepárate para la PAES con ensayos prácticos</p>
         {user?.role === 'profesor' ? (
-          <button onClick={() => navigate('/profesor')}>Crear Ensayo</button>
+          <>
+            <button onClick={() => navigate('/crear-pregunta')}>Crear Pregunta</button>
+            <button onClick={() => navigate('/profesor')}>Crear Ensayo</button>
+          </>
         ) : (
           <button onClick={() => navigate('/estudiante')}>Realizar Ensayo</button>
         )}
