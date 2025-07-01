@@ -26,8 +26,10 @@ Luego posicionar la terminar en la raiz del proyecto con
 ```
 cd ruta/del/proyecto/mi-proyecto-node-docker
 ```
-Finalmente ejecutar el siguiente comando 
+Finalmente ejecutar los siguientes comandos
 ```
+npm install axios
+docker-compose down --volumes
 docker-compose up --build
 ```
 
