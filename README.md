@@ -33,8 +33,17 @@ docker-compose up --build
 
 y buscar en el navegador el siguiente [enlace](http://localhost:5173/)
 
-cuentas
-Cuentas:  
+
+## Cuentas:  
+Para el acceso de los usuarios, se estableció que todos los correos institucionales con dominio @sansano.usm.cl serán reconocidos automáticamente como alumnos. En el caso de los profesores, solo podrán acceder como tal aquellos usuarios autorizados previamente en el sistema.
+
+A continuación, se presenta una tabla con los datos de acceso para cada tipo de usuario, donde creamos un correo para que puedan probar el acceso como profesor y ver las funcionalidades de este rol.
+
+Aclaración: Esto es un ejemplo para demostrar que el sistema puede diferenciar los distintos correos y permitir el acceso únicamente a usuarios específicos, que en este caso son los pertenecientes al dominio sansano.
+
 | Nombre | Contraseña | Rol |
 |----------|----------|----------|
 | prbprfsr@gmail.com   | B12345678!  | Profesor | 
+| ..@sansano.usm.cl   | Sin contraseña  | Alumno | 
+
+
