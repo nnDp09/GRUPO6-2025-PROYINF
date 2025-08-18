@@ -1,4 +1,4 @@
-# GRUPO6-2025-PROYINF
+# GRUPO3-2025-PROYING.
 ## Integrantes Grupo 3: <br>
 * Diego Espinoza Jara 202273576-7 <br>
 * Benjamin Barria Pinuer 202273644-5 <br>
