@@ -50,11 +50,9 @@ Aclaración: Esto es un ejemplo para demostrar que el sistema puede diferenciar 
 
 
 ## Identificación del Proyecto Base (2025-1):
-El proyecto consiste en una plataforma de ensayos PAES pensada para acompañar tanto a estudiantes como a profesores en la preparación de la prueba. Su principal propósito es ofrecer ensayos personalizados que los alumnos puedan rendir con mayor frecuencia, entregándoles retroalimentación automática en menos de cinco minutos para que comprendan sus avances y oportunidades de mejora.
+El proyecto consiste en una plataforma de ensayos PAES diseñada para apoyar a estudiantes y profesores en la preparación de esta prueba a través de ensayos personalizados. Actualmente, los estudiantes pueden registrarse e iniciar sesión con su correo institucional, rendir ensayos cronometrados y recibir retroalimentación básica, mientras que los profesores tienen la posibilidad de acceder a la plataforma, crear preguntas y gestionar ensayos de manera sencilla.
 
-Al mismo tiempo, la plataforma busca facilitar el trabajo docente, ya que les permite crear y asignar ensayos en cuestión de días, administrar un banco de preguntas editable en las cuatro materias principales y realizar un seguimiento detallado del progreso de sus estudiantes.
-
-El impacto de la iniciativa se evalúa a través de distintos aspectos: la autonomía que alcanzan los alumnos al practicar con los ensayos, la claridad de la retroalimentación recibida, la facilidad con que los docentes pueden diseñar y gestionar evaluaciones, y la utilidad del banco de preguntas como herramienta para construir pruebas personalizadas y efectivas.
+Se encuentran en desarrollo funcionalidades más avanzadas que buscan ampliar la disponibilidad y la calidad de los ensayos, ofrecer retroalimentación automática rápida a los estudiantes y entregar herramientas más eficientes para que los docentes generen y administren evaluaciones. Todo esto se hace con el objetivo de que los resultados sean medibles y alcanzables, estableciendo criterios claros de éxito para evaluar el impacto de la plataforma.
 
 
 
