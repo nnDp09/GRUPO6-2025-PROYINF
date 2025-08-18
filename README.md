@@ -49,3 +49,12 @@ Aclaración: Esto es un ejemplo para demostrar que el sistema puede diferenciar 
 | ..@sansano.usm.cl   | Sin contraseña  | Alumno | 
 
 
+## Identificación del Proyecto Base (2025-1):
+El proyecto consiste en una plataforma de ensayos PAES pensada para acompañar tanto a estudiantes como a profesores en la preparación de la prueba. Su principal propósito es ofrecer ensayos personalizados que los alumnos puedan rendir con mayor frecuencia, entregándoles retroalimentación automática en menos de cinco minutos para que comprendan sus avances y oportunidades de mejora.
+
+Al mismo tiempo, la plataforma busca facilitar el trabajo docente, ya que les permite crear y asignar ensayos en cuestión de días, administrar un banco de preguntas editable en las cuatro materias principales y realizar un seguimiento detallado del progreso de sus estudiantes.
+
+El impacto de la iniciativa se evalúa a través de distintos aspectos: la autonomía que alcanzan los alumnos al practicar con los ensayos, la claridad de la retroalimentación recibida, la facilidad con que los docentes pueden diseñar y gestionar evaluaciones, y la utilidad del banco de preguntas como herramienta para construir pruebas personalizadas y efectivas.
+
+
+
