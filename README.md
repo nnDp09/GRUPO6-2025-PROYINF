@@ -52,7 +52,7 @@ Aclaración: Esto es un ejemplo para demostrar que el sistema puede diferenciar 
 ## Identificación del Proyecto Base (2025-1):
 El proyecto consiste en una plataforma de ensayos PAES diseñada para apoyar a estudiantes y profesores en la preparación de esta prueba a través de ensayos personalizados. Actualmente, los estudiantes pueden registrarse e iniciar sesión con su correo institucional, rendir ensayos cronometrados y recibir retroalimentación básica, mientras que los profesores tienen la posibilidad de acceder a la plataforma, crear preguntas y gestionar ensayos de manera sencilla.
 
-Se encuentran en desarrollo funcionalidades más avanzadas que buscan ampliar la disponibilidad y la calidad de los ensayos, ofrecer retroalimentación automática rápida a los estudiantes y entregar herramientas más eficientes para que los docentes generen y administren evaluaciones. Todo esto se hace con el objetivo de que los resultados sean medibles y alcanzables, estableciendo criterios claros de éxito para evaluar el impacto de la plataforma.
+Se encuentran en desarrollo funcionalidades más avanzadas que buscan ampliar la disponibilidad y la calidad de los ensayos, ofrecer retroalimentación automática rápida a los estudiantes y entregar herramientas más eficientes para que los docentes generen y administren evaluaciones. Todo esto se hace con el objetivo de que los resultados sean medibles y alcanzables, estableciendo criterios claros de éxito para evaluar el impacto de la plataforma. Si se quiere probar el proyecto porfavor revisar "README-analisis_y_diseño_software.md". Este proyecto continuara siendo trabajado durante este segundo semestre de 2025.
 
 
 
